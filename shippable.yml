@@ -6,12 +6,15 @@ node_js:
   - 0.11
   
 env:
- - secure: PtOJncP2CPNm2FZhOngrR39PAXOJv8EDMlMalveWCl9sZxceVVvbVVVndR5o9tvxYKcp20HvBxu4zxdm7QcD36s71Moa38f8/3qHgwmvY97BEuJpsm9ofwdSUWRgoM2VZx329eIjqnyP37VLitYzgv2JtfOBUfmM+Z+/lZ5dYEH1OaAVEAo12V6s8LYFiwwtvOeY6oIpmLIRbXTtmzF0PTwMX+VWhIx+7Nha+SkeHyjrmE4NRSeasNt/qEOFfhVc/5diK2PWlUtRUaryrNjMhkK6FXjKopByi4UQECgSDKVcbP6HROQheuQHlcPtLIC22/iK9nhlstYQMq0Q/ULDgg==
+ global:
+    - secure: A+T7zpL8znjOg8ICLet/rYlz2mqDVO/NblAOK6J/t2lzj3csRDvNvaZMeZxU90hPw8oAEOeuMxh0Wy7N4jrO/AP0HyJYrIgnqY/x4a/zjqFLYY2KHeR16wNMAzI51je7FS1hoc+MJno2o8BFIj9R4iCeskrTawnR6R/PZrfOfUPzVDs2LdVCLE4NykYVI4vDkvsJ9JToQVz/IxlG/8GnMi7zq10Y32af1xSnbaOb6Kl3IKEkP+m8ne0bQSZlyF9gKEmNEWzBRU+jfZ2G1XuftpO4jyth67LuOAnjgz32nb/BaAoJ7okpQX1rqiFUaxLUfwkbw4TrSmCuuq8PQlrIyQ==
+    - secure: PtOJncP2CPNm2FZhOngrR39PAXOJv8EDMlMalveWCl9sZxceVVvbVVVndR5o9tvxYKcp20HvBxu4zxdm7QcD36s71Moa38f8/3qHgwmvY97BEuJpsm9ofwdSUWRgoM2VZx329eIjqnyP37VLitYzgv2JtfOBUfmM+Z+/lZ5dYEH1OaAVEAo12V6s8LYFiwwtvOeY6oIpmLIRbXTtmzF0PTwMX+VWhIx+7Nha+SkeHyjrmE4NRSeasNt/qEOFfhVc/5diK2PWlUtRUaryrNjMhkK6FXjKopByi4UQECgSDKVcbP6HROQheuQHlcPtLIC22/iK9nhlstYQMq0Q/ULDgg==
 
 build:
   ci:
     - node --version
     - if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi 
+    - echo $key1
     - echo $key1
     
   
