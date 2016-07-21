@@ -4,10 +4,14 @@ language: node_js
 node_js:
   #- 0.12
   - 0.11
+  
+env:
+ - secure: PtOJncP2CPNm2FZhOngrR39PAXOJv8EDMlMalveWCl9sZxceVVvbVVVndR5o9tvxYKcp20HvBxu4zxdm7QcD36s71Moa38f8/3qHgwmvY97BEuJpsm9ofwdSUWRgoM2VZx329eIjqnyP37VLitYzgv2JtfOBUfmM+Z+/lZ5dYEH1OaAVEAo12V6s8LYFiwwtvOeY6oIpmLIRbXTtmzF0PTwMX+VWhIx+7Nha+SkeHyjrmE4NRSeasNt/qEOFfhVc/5diK2PWlUtRUaryrNjMhkK6FXjKopByi4UQECgSDKVcbP6HROQheuQHlcPtLIC22/iK9nhlstYQMq0Q/ULDgg==
 
 build:
   ci:
     - node --version
     - if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi 
+    - echo $key1
     
   
