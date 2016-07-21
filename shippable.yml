@@ -15,6 +15,6 @@ build:
     - node --version
     - if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi 
     - echo $key1
-    - echo $key1
+    - echo $key2
     
   
